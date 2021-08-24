@@ -75,6 +75,7 @@ function showContact(contactId) {
   $(".last-name").html(contact.lastName);
   $(".phone-number").html(contact.phoneNumber);
   $(".email-address").html(multiAddress.emailAddress);
+  $(".email-type").html(multiAddress.type);
   $(".physical-address").html(contact.address);
   let buttons = $("#buttons");
   buttons.empty();
@@ -100,7 +101,7 @@ $(document).ready(function() {
     const inputtedLastName = $("input#new-last-name").val();
     const inputtedPhoneNumber = $("input#new-phone-number").val();
     const inputtedEmail = $("input#email").val();
-    const inputtedEmailType = $("input#email-type").val();
+    const inputtedEmailType = $("select#email-type").val();
     const inputtedAddress = $("input#address").val();
     $("input#new-first-name").val("");
     $("input#new-last-name").val("");
